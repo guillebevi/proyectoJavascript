@@ -1,0 +1,55 @@
+/*Toggle para el overlay (para que funcione unicamente cuando abrimos carrito o menu hamburguesa.
+  Aclarar que funciona porque son elementos hermanos y overlay esta debajo de los dos inputs en el código.*/
+  .show-overlay {
+    display: block;
+  }
+
+
+
+   /*CARRITO */
+/*Despues de cambiar el carrito en el html y en styles.css , aplicamos una animación en hover*/
+.cart-icon {
+    transition: all 0.2s ease-out;
+  }
+  
+  .cart-icon:hover {
+    color: var(--electric);
+    border-color: var(--electric);
+    transition: all 0.2s ease-in;
+}
+
+
+/*TOGGLE DE CARRO*/
+
+
+.open-cart {
+    transform: translate(0%);
+    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+  }
+  
+  .empty-msg {
+    color: grey;
+    font-size: 14px;
+  }
+ 
+
+
+
+/* ANIMACIONES */
+
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

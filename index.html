@@ -1,0 +1,268 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depo-Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comme&family=Nerko+One&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animaciones.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comme&family=Nerko+One&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+
+
+<body>
+
+
+<!-- ---------- MENU NAVBAR ---------- -->
+         
+<header>
+
+  <a href="#" class="logo"><img src="./img/r9.png"></a>
+  
+  <nav class="nav-icon" id="nav-icon">
+    <button class="boton-hamburguesa"><i class="fa-solid fa-bars"></i></button>
+         <ul class="navmenu navmenu_visible">
+          
+            <li class="nav-menu-item"><a href="#titulo" class="nav-menu-link">PRODUCTOS</a></li>
+            <li class="nav-menu-item"><a href="#seccionRegistro" class="nav-menu-link">REGISTRATE</a></li>
+            <!-- <li class="nav-menu-item"><a href="#copy" class="nav-menu-link">CONTACTO</a></li> -->
+            <li class="nav-menu-item"><a href="#" class="nav-menu-link">LOGIN</a></li>
+            
+         </ul>
+         
+  <button id="boton-carrito"><i class="fa-solid fa-cart-shopping cart-icon"  style="color: #eff1f6;"></i><span id="contadorCarrito">  0 </span></button>
+
+  <div class="menu-label">
+
+        <i class="fa-solid fa-bars"></i>
+
+  </div>
+</nav>  
+
+</header>
+
+
+
+
+<!------------  HERO CARRUSEL ------------>
+
+<main>
+    <section class="has-dflex-center">
+      <div class="lx-container-80">
+        <div class="lx-row">
+          <div class="lx-card carousel-container">
+            <div class="item fade">
+              <div class="image"><img src="./img/soccer-players-action-professional-stadium (1).jpg"/></div>
+            </div>
+            <div class="item fade">
+              <div class="image"><img src="./img/soccer-players-action-professional-stadium.jpg"/></div>
+              <div class="text is-text-left">
+                <h1 class="title"> <i class="far fa-hand-point-right"></i>&nbsp;Camisetas</h1>
+                <p>Todos los talles.</p>
+              </div>
+            </div>
+            <div class="item fade">
+              <div class="image"><img src="./img/50956015017_2042fac655_o1.jpg"/></div>
+              <div class="text is-text-centered">
+                <p> <i class="fas fa-info-circle"></i>&nbsp;Mas que un club</p>
+              </div>
+            </div><a class="prev has-dflex-center"><i class="fas fa-angle-left"></i></a><a class="next has-dflex-center"><i class="fas fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!--  H1 -->
+
+
+
+<div class="hero" ><h1 class="titulo">TIENDA Club Deportivo Longchamps</h1></div>
+
+
+
+<div class="subtitulo">
+
+  
+
+<p>Bienvenido a la tienda del Club Deportivo Longchamps,
+  aca encontraras la indumentaria oficial del club, desde medias, pantalones 
+  hasta camisetas. Encontra la mejor financiacion con todas las tarjetas Visa y Mastercard,
+  ademas de 25% off para socios del club.
+</p>
+</div>
+
+
+<!------------- H2 --------------->
+  <div class="hdos">
+    <h2>TODOS NUESTROS PRODUCTOS</h2>
+</div>
+
+<!----- SECCION PRODUCTOS--- -->
+
+<div id="productos" class="#contenedor-productos">
+
+
+<!------- CATEGORIAS -------->
+
+
+<div class="categorias">
+
+  <button id="todos" class="category active">📂Todas</button>
+  <button id="camisetas" class="category">👕Camisetas</button>
+  <button id="medias" class="category">🧦Medias</button>
+  <button id="pantalones" class="category">👖Pantalones</button>
+ 
+</div> 
+
+  
+ <!--------- SECCION PRODUCTOS ------------->
+
+
+ <main id="contenedor-productos"></main>
+
+
+
+</div>
+
+
+
+<!-- CARRITO MODAL -->
+
+
+<div class="modal-contenedor">
+  <div class="modal-carrito">
+      <h3> Mi Carrito</h3>
+      <button id="carritoCerrar"><i class="fa-solid fa-xmark"></i></button>
+      <div id="carrito-contenedor">
+          <!-- <div class="productoEnCarrito">
+              <p>Buzo 1</p>
+              <p>Precio: $1200</p>
+              <button class="boton-eliminar"><i class="fa-solid fa-trash"></i></button>
+          </div> -->
+      </div>
+      <p class="precioProducto">PRECIO TOTAL =  $<span id="precioTotal">0</span></p>
+      <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+      <button class="boton-comprar">Comprar</button>
+  </div>
+</div>
+
+
+
+ <!------- SECCION REGISTRO -------->
+
+
+<div class="seccionRegistro" id="seccionRegistro">
+
+  <div class="textoRegistro">
+    Registrate y recibí todas nuestra novedades
+  </div>
+
+ <div class="inputbox">
+  <input required="required" type="text">
+  <span>Nombre</span>
+  <i></i>
+</div>
+
+<div class="inputbox">
+  <input required="required" type="text">
+  <span>Apellido</span>
+  <i></i>
+</div>
+ 
+<div class="inputbox">
+  <input required="required" type="mail">
+  <span>Mail</span>
+  <i></i>
+</div>
+
+<button>
+  <span>Registrarme</span>
+</button>
+
+</div>
+<!----- API CLIMA ------>
+
+
+ 
+
+<div class="seccionApi">
+<p class="wait">Ingresá una ciudad y enterate como salir a entrenar...</p>
+
+<form id="form">
+  <button type="submit">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+  <input
+    type="text"
+    name="city"
+    autocomplete="off"
+    placeholder="Buscar una ciudad"
+    class="search-input"/>
+</form>
+
+
+
+<section class="card-container">
+<!-- <div class="card-clima">
+  <i class="fa-solid fa-x close" data-id="${city.id}"></i>
+  <div class="clima-info">
+    <h3 class="info-title2">${city.name}</h3>
+    <p class="info-subtitle">${city.weather[0].description}</p>
+    <div class="info-temp">
+      <span class="temp">${convertCelsius(city.main.temp)}°</span>
+      <span class="st">${convertCelsius(city.main.feels_like)}ST</span>
+    </div>
+  </div>
+  <div class="clima-img"><img src="https://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png"/></div>
+  <div class="clima-temp">
+    <div class="clima-max-min">
+      <span class="clima-max"
+        ><i class="fa-solid fa-arrow-up-long"></i>Max:${convertCelsius(city.main.temp_max)}</span
+      >
+      <span class="clima-min"
+        ><i class="fa-solid fa-arrow-down-long"></i>Min:${convertCelsius(city.main.temp_min)}</span
+      >
+    </div>
+    <span class="clima-humedad">${city.main.humidity}</span>
+  </div>
+</div> -->
+</section>
+</div>
+
+
+
+
+<!------- FOOTER --------->
+
+
+<footer>
+    <div class="cont-footer">
+        <h4 class="titulo-seccion">Redes Sociales</h4>
+        <div class="redes">
+            
+           <a href="https://www.instagram.com/club_deportivo_longchamps/?hl=es-la" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+           <a href="https://www.facebook.com/DeportivoLongchamps/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+
+        </div>
+    </div>
+    <div class="copy" id="copy">
+        <p class="right">Copyright © 2023 Club Deportivo Longchamps</p>
+
+    </div>
+</footer> 
+
+
+<script src="request.js"></script>
+<script src="./stock.js"></script>
+<script src="https://kit.fontawesome.com/5aaa156876.js" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+<script src="modal.js"></script>
+</body>
+</html>

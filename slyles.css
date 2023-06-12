@@ -1,0 +1,56 @@
+/*-------- MEDIA CUERIES -------- */
+
+/*------ NAVBAR ---------*/
+
+@media (max-width:880px) {
+    .navmenu{
+       flex-direction: column;
+       align-items: center;
+       background-color: var(--secundario);
+       position: fixed;
+       left: 0;
+       top: 60px;
+       width: 100%;
+       padding: 20px 0px;
+  
+       height: calc(100% - 60px);
+       overflow-y: auto;
+  
+       left: 100%;
+       transition: left 0.3s;
+    }
+    
+    .nav-menu-item{
+      line-height: 70px;
+  
+    }
+  
+    .nav-menu-link:hover{
+      color: var(--primario);
+      transition: 0.5s;
+      font-size: larger;
+    }
+   
+    .boton-hamburguesa{
+      display: block;
+    }
+  
+    header{
+      padding: 5px 5px;
+    }
+    .navmenu_visible{
+      left: 0;
+    }
+  
+  /*----- CATEGORIAS---- */
+  
+    .categorias {
+     display: block;
+     
+     
+     
+     
+     
+    }
+  
+  }
