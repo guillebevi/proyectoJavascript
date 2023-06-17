@@ -46,14 +46,13 @@ header {
   height: auto;
 
 }
- .navmenu{
+
+.navmenu{
   display: flex;
   list-style-type: none;
+}
  
-
- }
- 
- .navmenu a{
+.navmenu a{
   color: var(--blanco);
   font-size:16px ;
   text-transform: capitalize;
@@ -64,18 +63,16 @@ header {
   justify-content: center;
   align-items: center;
   font-family: 'Poppins';
- }
+}
 
- .navmenu a:hover{
+.navmenu a:hover{
   color:black;
+}
 
- }
-
- .nav-icon {
+.nav-icon {
   display: flex;
   align-items: center;
-
- }
+}
 
 
 
@@ -90,17 +87,14 @@ header {
   color: var(--blanco);
   font-size: 20px;
   background-color:var(--primario);
-  
   padding: 10px 10px;
   transition: all .3s;
   display: flex;
   gap: 5px;
-  
 }
 
 #boton-carrito:hover {
   cursor: pointer;
-  
 }
 
 
@@ -111,7 +105,6 @@ header {
 
 .contadorCarrito{
   font-size:15px;
-
 }
 
 
@@ -123,12 +116,10 @@ header {
   font-size: 21px;
   color: var(--blanco);
   cursor: pointer;
-  
 }
 
 .menu-label{
   display: none;
-
 }
 /* --------- HERO------------ */
 
@@ -144,7 +135,6 @@ header {
   animation: hueRotate 7s alternate infinite;
   font-family: 'Poppins';
   margin: auto;
-  
 }
 
 
@@ -181,7 +171,8 @@ header {
 
 main section {
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
+  /* min-height: 100vh; */
   padding: 4rem 0;
   display: flex;
   justify-content: center;
@@ -1279,6 +1270,14 @@ main section {
 
 @media (max-width: 500px){
 
+main section .carousel-container{
+  height: 70%;
+}
+main section{
+  height: 60%;
+  padding: 100px 0px 0px 0px;
+}
+
 .titulo{
   font-size: 2.5rem;
 }
@@ -1327,12 +1326,7 @@ main section {
 }
 
 main section {
-  width: 100%;
-  min-height: 100vh;
-  padding: 4rem 0;
-  display: flex;
-  justify-content: center;
-  padding-top: 250px;
+ padding-top: 100px;
 }
 
 .categorias{
@@ -1395,6 +1389,10 @@ main section{
   max-width: 80%;
 }
 
+.subtitulo{
+  height: 70%;
+}
+
 }
 
   
@@ -1419,6 +1417,9 @@ main section{
 .producto h3{
   font-size: 1.2rem;
 }
+.subtitulo{
+  height: 70%;
+}
 
 }
 
@@ -1432,6 +1433,10 @@ main section{
   padding: 0px 10px;
 }
 
+.subtitulo{
+  height: 70%;
+}
+
 }
 
 @media (max-width: 375px){
@@ -1442,6 +1447,9 @@ main section{
   
 .categorias .category{
   padding: 1px 10px;
+}
+.subtitulo{
+  height: 70%;
 }
 
 }
