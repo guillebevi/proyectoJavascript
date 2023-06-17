@@ -130,9 +130,9 @@ const actualizarCarrito = () => {
      const div = document.createElement('div')
    div.className = ('productoEnCarrito')
    div.innerHTML = `
-    <p class="p-color">${prod.nombre}</p>
-    <p class="precio-color">PRECIO: $ ${prod.precio}</p>
-    <p>CANTIDAD: <span id="cantidad">${prod.cantidad}</span></p>
+    <p class="p-color">${prod.nombre} </p>
+    <p class="precio-color"> Precio: $ ${prod.precio}</p>
+    <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
    <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="fa-solid fa-trash"></i></button>
 
   `
