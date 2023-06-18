@@ -4,7 +4,6 @@
     --primario: #125285; 
     --secundario: #1B7CB8;
     --blanco: whitesmoke;
-
 }
 
 * {
@@ -17,8 +16,7 @@
 
 
 body{
-    background: var(--background) ;
-    
+    background: var(--background) ;   
 }
 
 html{
@@ -1070,11 +1068,11 @@ form input {
   overflow-y: auto;
   left: 100%;
   transition: left 0.3s;
+  
 }
   
 .nav-menu-item{
   line-height: 70px;
-
 }
 
 .nav-menu-link:hover{
