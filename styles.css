@@ -1146,7 +1146,7 @@ header{
 @media (max-width: 768px){
 
 .titulo{
-  padding-top: 0px;
+  padding-top: 100px;
 }
 
 .subtitulo{
@@ -1155,6 +1155,9 @@ header{
 
 .categorias{
   gap: 10px;
+}
+.categorias .category{
+  padding: 20px 30px;
 }
 
 h2{
@@ -1167,6 +1170,11 @@ h2{
 
 .close{
   position: relative;
+}
+.seccionRegistro{
+  min-height: 0%;
+  margin-bottom: 50px;
+
 }
 
 }
@@ -1230,6 +1238,11 @@ h2{
   font-size: 1.5rem;   
 }
 
+.titulo{
+font-size: 3.5rem;
+
+}
+
 }
 
 @media (max-width: 696px){
@@ -1240,6 +1253,9 @@ h2{
 
 .producto{
   max-width: 40%;
+}
+.titulo{
+  padding: 0;
 }
 
 }
@@ -1261,7 +1277,11 @@ main section {
 @media (max-width: 612px){
 
 .categorias .category{
-  padding: 5px 15px;   
+  padding: 5px 15px;  
+}
+
+#contenedor-productos{
+  gap: 0px;  
 }
 
 }
@@ -1269,8 +1289,9 @@ main section {
 @media (max-width: 500px){
 
 main section .carousel-container{
-  height: 70%;
+  height: 90%;
 }
+
 main section{
   height: 60%;
   padding: 100px 0px 0px 0px;
@@ -1293,9 +1314,7 @@ main section{
   font-size: 0.9rem;
 }
 
-.producto{
-  max-width: 80%;
-}
+
 
 #contenedor-productos{
   gap: 10px;
@@ -1352,7 +1371,8 @@ h2{
 }
 
 .producto{
-  max-width: 80%;
+  padding: 5px;
+  margin: 5;
 }
 .modal-carrito{
   min-width: 0;
@@ -1364,27 +1384,16 @@ h2{
 @media (max-width: 425px){
 
 .titulo{
-  font-size: 2rem;
-}
-
-.producto{
-  max-width: 40%;     
+  font-size: 3rem;
 }
 
 .categorias .category{
   padding: 5px;
 }
 
-#contenedor-productos{
- gap: 10px;
-}
 
 main section{
   padding-top: 100px;
-}
-
-.producto{
-  max-width: 80%;
 }
 
 .subtitulo{
@@ -1392,8 +1401,6 @@ main section{
 }
 
 }
-
-  
 
 @media (max-width: 400px) {
 
@@ -1409,9 +1416,7 @@ main section{
    margin: 20px 0;
   width: 100%;
 }
-.producto{
-  max-width: 90%;
-}
+
 .producto h3{
   font-size: 1.2rem;
 }
@@ -1434,6 +1439,9 @@ main section{
 .subtitulo{
   height: 70%;
 }
+form input{
+  margin: 5px 5px;
+  }
 
 }
 
@@ -1442,24 +1450,60 @@ main section{
 .categorias{
  gap: 2px;
 }
-  
-.categorias .category{
-  padding: 1px 10px;
+#contenedor-productos{
+  margin: 20px 0px;
 }
+.categorias .category{
+  padding: 0px 0px;
+}
+
 .subtitulo{
   height: 70%;
 }
 
+form input{
+margin: 5px 5px;
 }
 
+}
+@media (max-width: 340px){
+
+  h2{
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+  }
+  .wait{
+    font-size:1rem ;
+  }
+  footer{
+    font-size: 0.5rem;
+  }
+  .subtitulo{
+    font-size: 1.1rem;
+  }
+
+}
 @media (max-width: 335px) {
 
 .info-title {
   font-size: 20px;
 }
-
+#boton-carrito{
+  font-size:15px ;
+  padding: 0;
+}
+.fa-solid{
+  font-size: 15px;
+padding: 0 0;
+ 
 }
 
+}
+@media (max-width: 320px){
+  .producto{
+  max-width: 80%;
+  }
+}
 .animate {
   animation: fadeIn 0.5s ease-in-out forwards;
 }

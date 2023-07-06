@@ -175,7 +175,7 @@ botonHamburguesa.addEventListener("click",() => {
 
 
 
-// // -----  CARRUSEL --------- //
+//  -----  CARRUSEL --------- //
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".carousel-container").forEach((carousel) => {
